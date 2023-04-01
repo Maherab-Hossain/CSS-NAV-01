@@ -1,0 +1,259 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Crimson Text', serif;
+    font-family: 'Delicious Handrawn', cursive;
+    font-family: 'Roboto Slab', serif;
+}
+body{
+   
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(./images/BG\ 1.jpg);
+    /* background-position: center; */
+    background-size: cover;
+    
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+/* NAVBAR STARTS HERE */
+nav{
+    /* background-color: burlywood; */
+    text-align: center;
+
+}
+nav ul li{
+    display: inline-block;
+    margin: 25px 25px 0 25px;
+}
+nav ul li a{
+    color: #FEF9E7 ; 
+    font-weight: 900;
+    padding: 10px;
+    display: block;
+    border-radius: 22px;
+    position: relative;
+    z-index: 1;
+    transition: 0.5s;
+}
+nav ul li a:hover{
+    color:#DFFF00;
+    font-weight: 800;
+    font-size: 22px;
+    overflow: visible;
+}
+nav ul li a::before{
+    content: "";
+    background-color: #334d50;
+    width: 100%;
+    height: 0%;
+    margin-top: 50px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    transition: 0.3s;
+}
+nav ul li:hover a::before{
+    height: 50%;
+    border-radius: 30px;
+    margin-top: 0;
+    /* border: 1px solid #F1C40F; */
+}
+nav ul li a::after{
+    content: "";
+    background-color: #cbcaa5;
+    margin-bottom: 50px;
+    width: 100%;
+    height: 0%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.3s;
+}
+nav ul li:hover a::after{
+    height: 50%;
+    border-radius: 30px;
+    margin-bottom: 0;
+    /* border: 1px solid #F1C40F; */
+}
+.mainD{
+    position: relative;
+}
+.partA{
+    display: flex;
+    right: 100px;
+    top:100px;
+    position: absolute;
+}
+.partB{
+    height: 600px;
+    width: 50%;
+    padding: 280px 100px 30px 60px;
+    text-align: justify;
+}
+.partB h1{
+    font-size: 34px;
+    font-family: 'Delicious Handrawn', cursive;
+    color: #F1FEFF;
+    
+}
+.partB p{
+    font-size: 16px;
+    font-weight: 300;
+    font-family: 'Roboto Mono', monospace;
+    line-height: 20px;
+    color: #C8D8DA ;
+}
+button{
+    width: 180px;
+    color: #2C3E50;
+    padding: 12px 0;
+    background-color: #FFC603  ;
+    border: 0;
+    border-radius: 22px;
+    outline: 0;
+    margin: 30px;
+    transition: 0.3s;
+    position: relative;
+}
+button:hover{
+   background-color: #FF9403 ;
+   cursor: pointer;
+}
+button span{
+    font-weight: 1000;
+    font-family: 'Josefin Sans', sans-serif;
+    transition: 0.3s;
+}
+button span:hover{
+    color: #F1FEFF;
+    font-size: 16px;
+}
+.card{
+    width: 210px;
+    height: 240px;
+    /* display: inline-block; */
+    border-radius: 18px;
+    padding:25px 30px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 18px 15px;
+    font-size: 10px;
+    background-position: center;
+    background-size: cover;
+    transition:0.3s;
+}
+.card:hover{
+    width: 250px;
+    height: 280px;
+    border: 3px solid #DFFF00;
+}
+.card h5{
+    color: #2B1E0D;
+    font-size: 13px;
+    font-weight: 1000;
+    font-family: 'Lobster', cursive;
+}
+.card p{
+    font-size: 11px;
+    font-weight: 900;
+    font-family: 'Roboto Slab', serif;
+    color: #774B10 ;
+}
+.card1{
+   background-image: url(./images/pic-1.avif);
+}
+.card2{
+   background-image: url(./images/pic-1.png);
+}
+.card3{
+   background-image: url(./images/pic-3.avif);
+}
+.card4{
+   background-image: url(./images/pic-4.avif);
+}
+.card:hover{
+    transform: translateY(-10px);
+}
+h5:hover{
+    color: #fff;
+    text-shadow: 0 0 15px #DFFF00;
+    font-size: 14px;
+}
+.card p:hover{
+    text-shadow: 0 0 15px #000;
+    font-size: 16px;
+    color: #F1FEFF;
+}
+.section{
+    position: fixed;
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .bdtext{
+    background-color: bisque;
+    display: flex;
+    height: 60%;
+    align-items: center;
+}
+.bdtextM{
+    flex-basis: 50%;
+}
+.bdtext div{
+    margin-left: 90px;
+    margin-top: 350px;
+}
+button{
+    width: 180px;
+    color: azure;
+    padding: 12px 0;
+    background-color: darkgray;
+    border: 0;
+    border-radius: 22px;
+    outline: 0;
+    margin: 30px;
+}
+section{
+   background-color: coral;
+   
+}
+
+.bdtextA{
+    width: 300px;
+    height: 630px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 0 15px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 0 15px;
+    background-color: brown;
+     background-image: url(./images/Lofoten\ Norway.jpg);
+    background-position: center;
+    background-size: cover;
+} */
+
